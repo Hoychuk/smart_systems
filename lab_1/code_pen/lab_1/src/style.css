@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #222;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+button:hover {
+    background-color: darkorange;
+}
+.light-strip {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+.light {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #444;
+    transition: background-color 0.3s;
+}
+.on {
+    background-color: yellow;
+}
+#movement-slider {
+    margin-left: 50px;
+    width: 200px;
+}

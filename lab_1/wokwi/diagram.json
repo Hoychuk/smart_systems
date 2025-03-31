@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "author": "ТВ-11 Гойчук Олександр Володимирович",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-nano", "id": "nano", "top": 81.6, "left": -19.7, "attrs": {} },
+    {
+      "type": "wokwi-led-ring",
+      "id": "ring1",
+      "top": -114.56,
+      "left": -133.21,
+      "attrs": { "pixels": "16" }
+    },
+    {
+      "type": "wokwi-pir-motion-sensor",
+      "id": "pir1",
+      "top": -111.2,
+      "left": 117.42,
+      "attrs": {}
+    }
+  ],
+  "connections": [
+    [ "pir1:GND", "nano:GND.2", "black", [ "v48", "h-67.46" ] ],
+    [ "ring1:GND", "nano:GND.1", "black", [ "v163.2", "h192" ] ],
+    [ "pir1:OUT", "nano:3", "green", [ "v9.6", "h-76.94" ] ],
+    [ "pir1:VCC", "nano:3.3V", "red", [ "v192", "h-19.2" ] ],
+    [ "ring1:VCC", "nano:5V", "red", [ "v201.6", "h163.2", "v-9.6" ] ],
+    [ "ring1:DIN", "nano:2", "green", [ "v19.2", "h144" ] ]
+  ],
+  "dependencies": {}
+}
